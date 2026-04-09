@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> فاست تراست للأدوية والتسويق الدوائي</title>
+<title>فاست تراست للأدوية والتسويق الدوائي</title>
 
 <style>
 body {
@@ -14,9 +14,9 @@ body {
 }
 
 header {
-    background: #0a6ebd;
+    background: linear-gradient(45deg, #0a6ebd, #054a85);
     color: white;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
 }
 
@@ -33,6 +33,10 @@ nav a {
     font-weight: bold;
 }
 
+nav a:hover {
+    text-decoration: underline;
+}
+
 .container {
     padding: 20px;
 }
@@ -41,8 +45,45 @@ nav a {
     background: white;
     padding: 20px;
     margin: 15px 0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.product {
+    background: white;
+    padding: 15px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+.product img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #0a6ebd;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #054a85;
 }
 
 footer {
@@ -65,7 +106,7 @@ footer {
 <nav>
     <a href="#">الرئيسية</a>
     <a href="#">من نحن</a>
-    <a href="#">المنتجات</a>
+    <a href="#products">المنتجات</a>
     <a href="#">اتصل بنا</a>
 </nav>
 
@@ -74,7 +115,7 @@ footer {
     <div class="card">
         <h2>📌 الملف الشخصي للشركة</h2>
         <p>
-         فاست تراست للأدوية هي شركة متخصصة في تصنيع وتوزيع المنتجات الدوائية عالية الجودة.
+        فاست تراست للأدوية هي شركة متخصصة في تصنيع وتوزيع المنتجات الدوائية عالية الجودة.
         نسعى لتقديم حلول طبية فعالة وآمنة لتحسين صحة المجتمع.
         </p>
     </div>
@@ -95,11 +136,41 @@ footer {
         </ul>
     </div>
 
+    <!-- المنتجات -->
+    <div class="card" id="products">
+        <h2>💊 منتجاتنا</h2>
+
+        <div class="products">
+
+            <div class="product">
+                <img src="https://via.placeholder.com/100">
+                <h3>دواء مسكن</h3>
+                <p>فعال لتخفيف الألم</p>
+                <button>اطلب الآن</button>
+            </div>
+
+            <div class="product">
+                <img src="https://via.placeholder.com/100">
+                <h3>مضاد حيوي</h3>
+                <p>لعلاج الالتهابات</p>
+                <button>اطلب الآن</button>
+            </div>
+
+            <div class="product">
+                <img src="https://via.placeholder.com/100">
+                <h3>فيتامينات</h3>
+                <p>تقوية المناعة</p>
+                <button>اطلب الآن</button>
+            </div>
+
+        </div>
+    </div>
+
     <div class="card">
         <h2>📞 تواصل معنا</h2>
         <p>📍 العنوان: صنعاء - اليمن</p>
         <p>📧 البريد: saam.ameer2010ss@gmail.com</p>
-        <p>📱الهاتف:773535583</p>
+        <p>📱 الهاتف: 773535583</p>
     </div>
 
 </div>
